@@ -1,0 +1,6 @@
+framework module Pods_SimPermissions {
+  umbrella header "Pods-SimPermissions-umbrella.h"
+
+  export *
+  module * { export * }
+}

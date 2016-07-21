@@ -1,0 +1,15 @@
+PODS:
+  - SQLite.swift (0.10.1)
+  - SwiftFSWatcher (1.02)
+
+DEPENDENCIES:
+  - SQLite.swift (~> 0.10.1)
+  - SwiftFSWatcher
+
+SPEC CHECKSUMS:
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+  SwiftFSWatcher: cc65f552d380629f7566b90fe32fbf57561184ee
+
+PODFILE CHECKSUM: dbeaf1a457f03ddd4879176f9691de1d2e49684c
+
+COCOAPODS: 1.0.1
