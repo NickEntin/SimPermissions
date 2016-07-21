@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B30851873F8D8A13D2796BA /* Pods_SimPermissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351F29CE58BB4B596EA6A44F /* Pods_SimPermissions.framework */; };
+		79DDA53F4B58B7B6EF40609C /* Pods_SimPermissionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EDB8B96471CEF2CEF8C45 /* Pods_SimPermissionsTests.framework */; };
+		D2028ED01D4F3487007C0D73 /* FileMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2028ECF1D4F3487007C0D73 /* FileMonitor.swift */; };
+		D204AC251D4EF4B300699293 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D204AC241D4EF4B300699293 /* PFMoveApplication.m */; };
+		D204AC291D4EF4F400699293 /* MoveApplication.strings in Resources */ = {isa = PBXBuildFile; fileRef = D204AC281D4EF4F400699293 /* MoveApplication.strings */; };
+		D25F8B2B1D40A7AA002B0EDE /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B2A1D40A7AA002B0EDE /* PermissionManager.swift */; };
+		D25F8B2D1D40B22B002B0EDE /* PermissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B2C1D40B22B002B0EDE /* PermissionModel.swift */; };
+		D25F8B2F1D40B71F002B0EDE /* PermissionMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B2E1D40B71F002B0EDE /* PermissionMenuItemView.swift */; };
+		D25F8B311D40B8B2002B0EDE /* PermissionMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B301D40B8B2002B0EDE /* PermissionMenuItem.swift */; };
+		D25F8B621D40D8B2002B0EDE /* SimulatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B611D40D8B2002B0EDE /* SimulatorModel.swift */; };
+		D25F8B641D40DEB1002B0EDE /* SimulatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B631D40DEB1002B0EDE /* SimulatorManager.swift */; };
+		D25F8B661D40E000002B0EDE /* SimulatorMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F8B651D40E000002B0EDE /* SimulatorMenuItem.swift */; };
+		D26A81871D473A5F008D99DF /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A81861D473A5F008D99DF /* AppModel.swift */; };
+		D26A818E1D473C24008D99DF /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A818D1D473C24008D99DF /* Label.swift */; };
+		D26A81901D473DC6008D99DF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A818F1D473DC6008D99DF /* MenuManager.swift */; };
+		D26A81921D4C4F67008D99DF /* SimulatorMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A81911D4C4F67008D99DF /* SimulatorMenuItemView.swift */; };
+		D26A81941D4C6E68008D99DF /* PermissionHeaderMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A81931D4C6E68008D99DF /* PermissionHeaderMenuItem.swift */; };
+		D26A81961D4C6ED3008D99DF /* PermissionHeaderMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A81951D4C6ED3008D99DF /* PermissionHeaderMenuItemView.swift */; };
+		D2AA9A5B1D4135E500DD9A39 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA9A5A1D4135E500DD9A39 /* AppManager.swift */; };
+		D2FDA8631D409FBE00B79649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDA8621D409FBE00B79649 /* AppDelegate.swift */; };
+		D2FDA8651D409FBE00B79649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FDA8641D409FBE00B79649 /* Assets.xcassets */; };
+		D2FDA8681D409FBE00B79649 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FDA8661D409FBE00B79649 /* MainMenu.xib */; };
+		D2FDA8731D409FBE00B79649 /* SimPermissionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDA8721D409FBE00B79649 /* SimPermissionsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2FDA86F1D409FBE00B79649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FDA8571D409FBE00B79649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2FDA85E1D409FBE00B79649;
+			remoteInfo = SimPermissions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		135382E1E656AD55BE0184EF /* Pods-SimPermissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimPermissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimPermissions/Pods-SimPermissions.release.xcconfig"; sourceTree = "<group>"; };
+		351F29CE58BB4B596EA6A44F /* Pods_SimPermissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimPermissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D9B5E06B6BCD1044DB2D67 /* Pods-SimPermissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimPermissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimPermissions/Pods-SimPermissions.debug.xcconfig"; sourceTree = "<group>"; };
+		696EDB8B96471CEF2CEF8C45 /* Pods_SimPermissionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimPermissionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8A673F29C82005AA19163E /* Pods-SimPermissionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimPermissionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimPermissionsTests/Pods-SimPermissionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2028ECF1D4F3487007C0D73 /* FileMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileMonitor.swift; sourceTree = "<group>"; };
+		D204AC221D4EF4B200699293 /* SimPermissions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimPermissions-Bridging-Header.h"; sourceTree = "<group>"; };
+		D204AC231D4EF4B300699293 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFMoveApplication.h; path = PFMoveApplication/PFMoveApplication.h; sourceTree = "<group>"; };
+		D204AC241D4EF4B300699293 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFMoveApplication.m; path = PFMoveApplication/PFMoveApplication.m; sourceTree = "<group>"; };
+		D204AC281D4EF4F400699293 /* MoveApplication.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = MoveApplication.strings; path = PFMoveApplication/MoveApplication.strings; sourceTree = "<group>"; };
+		D25F8B2A1D40A7AA002B0EDE /* PermissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		D25F8B2C1D40B22B002B0EDE /* PermissionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionModel.swift; sourceTree = "<group>"; };
+		D25F8B2E1D40B71F002B0EDE /* PermissionMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionMenuItemView.swift; sourceTree = "<group>"; };
+		D25F8B301D40B8B2002B0EDE /* PermissionMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionMenuItem.swift; sourceTree = "<group>"; };
+		D25F8B611D40D8B2002B0EDE /* SimulatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorModel.swift; sourceTree = "<group>"; };
+		D25F8B631D40DEB1002B0EDE /* SimulatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorManager.swift; sourceTree = "<group>"; };
+		D25F8B651D40E000002B0EDE /* SimulatorMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorMenuItem.swift; sourceTree = "<group>"; };
+		D26A81861D473A5F008D99DF /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D26A818D1D473C24008D99DF /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		D26A818F1D473DC6008D99DF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		D26A81911D4C4F67008D99DF /* SimulatorMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorMenuItemView.swift; sourceTree = "<group>"; };
+		D26A81931D4C6E68008D99DF /* PermissionHeaderMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionHeaderMenuItem.swift; sourceTree = "<group>"; };
+		D26A81951D4C6ED3008D99DF /* PermissionHeaderMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionHeaderMenuItemView.swift; sourceTree = "<group>"; };
+		D2AA9A5A1D4135E500DD9A39 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		D2FDA85F1D409FBE00B79649 /* SimPermissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimPermissions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FDA8621D409FBE00B79649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2FDA8641D409FBE00B79649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2FDA8671D409FBE00B79649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D2FDA8691D409FBE00B79649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FDA86E1D409FBE00B79649 /* SimPermissionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimPermissionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FDA8721D409FBE00B79649 /* SimPermissionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimPermissionsTests.swift; sourceTree = "<group>"; };
+		D2FDA8741D409FBE00B79649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A8859CA5F0C9D222AD47F6 /* Pods-SimPermissionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimPermissionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimPermissionsTests/Pods-SimPermissionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2FDA85C1D409FBE00B79649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B30851873F8D8A13D2796BA /* Pods_SimPermissions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FDA86B1D409FBE00B79649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DDA53F4B58B7B6EF40609C /* Pods_SimPermissionsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7432064988DA027EE731821B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40D9B5E06B6BCD1044DB2D67 /* Pods-SimPermissions.debug.xcconfig */,
+				135382E1E656AD55BE0184EF /* Pods-SimPermissions.release.xcconfig */,
+				F0A8859CA5F0C9D222AD47F6 /* Pods-SimPermissionsTests.debug.xcconfig */,
+				7F8A673F29C82005AA19163E /* Pods-SimPermissionsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2028ECC1D4F3449007C0D73 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D204AC211D4EF49600699293 /* PFMoveApplication */,
+				D2028ECF1D4F3487007C0D73 /* FileMonitor.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D204AC211D4EF49600699293 /* PFMoveApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D204AC231D4EF4B300699293 /* PFMoveApplication.h */,
+				D204AC241D4EF4B300699293 /* PFMoveApplication.m */,
+				D204AC281D4EF4F400699293 /* MoveApplication.strings */,
+			);
+			name = PFMoveApplication;
+			sourceTree = "<group>";
+		};
+		D26A81881D473B26008D99DF /* Simulators */ = {
+			isa = PBXGroup;
+			children = (
+				D25F8B631D40DEB1002B0EDE /* SimulatorManager.swift */,
+				D25F8B611D40D8B2002B0EDE /* SimulatorModel.swift */,
+				D25F8B651D40E000002B0EDE /* SimulatorMenuItem.swift */,
+				D26A81911D4C4F67008D99DF /* SimulatorMenuItemView.swift */,
+			);
+			name = Simulators;
+			sourceTree = "<group>";
+		};
+		D26A81891D473B37008D99DF /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				D25F8B2A1D40A7AA002B0EDE /* PermissionManager.swift */,
+				D25F8B2C1D40B22B002B0EDE /* PermissionModel.swift */,
+				D25F8B301D40B8B2002B0EDE /* PermissionMenuItem.swift */,
+				D25F8B2E1D40B71F002B0EDE /* PermissionMenuItemView.swift */,
+			);
+			name = Permissions;
+			sourceTree = "<group>";
+		};
+		D26A818A1D473B40008D99DF /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				D2AA9A5A1D4135E500DD9A39 /* AppManager.swift */,
+				D26A81861D473A5F008D99DF /* AppModel.swift */,
+			);
+			name = Apps;
+			sourceTree = "<group>";
+		};
+		D26A818B1D473B5B008D99DF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D26A818F1D473DC6008D99DF /* MenuManager.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		D26A818C1D473C11008D99DF /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D26A818D1D473C24008D99DF /* Label.swift */,
+				D26A81931D4C6E68008D99DF /* PermissionHeaderMenuItem.swift */,
+				D26A81951D4C6ED3008D99DF /* PermissionHeaderMenuItemView.swift */,
+			);
+			name = "UI Elements";
+			sourceTree = "<group>";
+		};
+		D2FDA8561D409FBE00B79649 = {
+			isa = PBXGroup;
+			children = (
+				D2FDA8611D409FBE00B79649 /* SimPermissions */,
+				D2FDA8711D409FBE00B79649 /* SimPermissionsTests */,
+				D2FDA8601D409FBE00B79649 /* Products */,
+				7432064988DA027EE731821B /* Pods */,
+				F7B31B1748CEC151009CF1B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2FDA8601D409FBE00B79649 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDA85F1D409FBE00B79649 /* SimPermissions.app */,
+				D2FDA86E1D409FBE00B79649 /* SimPermissionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2FDA8611D409FBE00B79649 /* SimPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				D204AC221D4EF4B200699293 /* SimPermissions-Bridging-Header.h */,
+				D2FDA8621D409FBE00B79649 /* AppDelegate.swift */,
+				D26A818B1D473B5B008D99DF /* Menu */,
+				D26A81881D473B26008D99DF /* Simulators */,
+				D26A818A1D473B40008D99DF /* Apps */,
+				D26A81891D473B37008D99DF /* Permissions */,
+				D26A818C1D473C11008D99DF /* UI Elements */,
+				D2028ECC1D4F3449007C0D73 /* Utilities */,
+				D2FDA8641D409FBE00B79649 /* Assets.xcassets */,
+				D2FDA8661D409FBE00B79649 /* MainMenu.xib */,
+				D2FDA8691D409FBE00B79649 /* Info.plist */,
+			);
+			path = SimPermissions;
+			sourceTree = "<group>";
+		};
+		D2FDA8711D409FBE00B79649 /* SimPermissionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDA8721D409FBE00B79649 /* SimPermissionsTests.swift */,
+				D2FDA8741D409FBE00B79649 /* Info.plist */,
+			);
+			path = SimPermissionsTests;
+			sourceTree = "<group>";
+		};
+		F7B31B1748CEC151009CF1B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351F29CE58BB4B596EA6A44F /* Pods_SimPermissions.framework */,
+				696EDB8B96471CEF2CEF8C45 /* Pods_SimPermissionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2FDA85E1D409FBE00B79649 /* SimPermissions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2FDA8771D409FBE00B79649 /* Build configuration list for PBXNativeTarget "SimPermissions" */;
+			buildPhases = (
+				D218045E186992C7DA3F9690 /* [CP] Check Pods Manifest.lock */,
+				D2FDA85B1D409FBE00B79649 /* Sources */,
+				D2FDA85C1D409FBE00B79649 /* Frameworks */,
+				D2FDA85D1D409FBE00B79649 /* Resources */,
+				B404D68075B6C6E7D89CF953 /* [CP] Embed Pods Frameworks */,
+				8B3027CB7B4A369A2522453A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimPermissions;
+			productName = SimPermissions;
+			productReference = D2FDA85F1D409FBE00B79649 /* SimPermissions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2FDA86D1D409FBE00B79649 /* SimPermissionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2FDA87A1D409FBE00B79649 /* Build configuration list for PBXNativeTarget "SimPermissionsTests" */;
+			buildPhases = (
+				CCB8F325964EB687211CC0E7 /* [CP] Check Pods Manifest.lock */,
+				D2FDA86A1D409FBE00B79649 /* Sources */,
+				D2FDA86B1D409FBE00B79649 /* Frameworks */,
+				D2FDA86C1D409FBE00B79649 /* Resources */,
+				B0B01562AAD32A6AABF24F95 /* [CP] Embed Pods Frameworks */,
+				CBBB34080912D4646C91510D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2FDA8701D409FBE00B79649 /* PBXTargetDependency */,
+			);
+			name = SimPermissionsTests;
+			productName = SimPermissionsTests;
+			productReference = D2FDA86E1D409FBE00B79649 /* SimPermissionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2FDA8571D409FBE00B79649 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nick Entin";
+				TargetAttributes = {
+					D2FDA85E1D409FBE00B79649 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D2FDA86D1D409FBE00B79649 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D2FDA85E1D409FBE00B79649;
+					};
+				};
+			};
+			buildConfigurationList = D2FDA85A1D409FBE00B79649 /* Build configuration list for PBXProject "SimPermissions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2FDA8561D409FBE00B79649;
+			productRefGroup = D2FDA8601D409FBE00B79649 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2FDA85E1D409FBE00B79649 /* SimPermissions */,
+				D2FDA86D1D409FBE00B79649 /* SimPermissionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2FDA85D1D409FBE00B79649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D204AC291D4EF4F400699293 /* MoveApplication.strings in Resources */,
+				D2FDA8651D409FBE00B79649 /* Assets.xcassets in Resources */,
+				D2FDA8681D409FBE00B79649 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FDA86C1D409FBE00B79649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B3027CB7B4A369A2522453A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimPermissions/Pods-SimPermissions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B01562AAD32A6AABF24F95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimPermissionsTests/Pods-SimPermissionsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B404D68075B6C6E7D89CF953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimPermissions/Pods-SimPermissions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBB34080912D4646C91510D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimPermissionsTests/Pods-SimPermissionsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB8F325964EB687211CC0E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D218045E186992C7DA3F9690 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2FDA85B1D409FBE00B79649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26A81901D473DC6008D99DF /* MenuManager.swift in Sources */,
+				D25F8B2F1D40B71F002B0EDE /* PermissionMenuItemView.swift in Sources */,
+				D25F8B2B1D40A7AA002B0EDE /* PermissionManager.swift in Sources */,
+				D25F8B621D40D8B2002B0EDE /* SimulatorModel.swift in Sources */,
+				D26A81871D473A5F008D99DF /* AppModel.swift in Sources */,
+				D26A818E1D473C24008D99DF /* Label.swift in Sources */,
+				D2FDA8631D409FBE00B79649 /* AppDelegate.swift in Sources */,
+				D25F8B311D40B8B2002B0EDE /* PermissionMenuItem.swift in Sources */,
+				D25F8B641D40DEB1002B0EDE /* SimulatorManager.swift in Sources */,
+				D26A81961D4C6ED3008D99DF /* PermissionHeaderMenuItemView.swift in Sources */,
+				D26A81941D4C6E68008D99DF /* PermissionHeaderMenuItem.swift in Sources */,
+				D2028ED01D4F3487007C0D73 /* FileMonitor.swift in Sources */,
+				D2AA9A5B1D4135E500DD9A39 /* AppManager.swift in Sources */,
+				D26A81921D4C4F67008D99DF /* SimulatorMenuItemView.swift in Sources */,
+				D25F8B661D40E000002B0EDE /* SimulatorMenuItem.swift in Sources */,
+				D25F8B2D1D40B22B002B0EDE /* PermissionModel.swift in Sources */,
+				D204AC251D4EF4B300699293 /* PFMoveApplication.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FDA86A1D409FBE00B79649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FDA8731D409FBE00B79649 /* SimPermissionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2FDA8701D409FBE00B79649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2FDA85E1D409FBE00B79649 /* SimPermissions */;
+			targetProxy = D2FDA86F1D409FBE00B79649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2FDA8661D409FBE00B79649 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2FDA8671D409FBE00B79649 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2FDA8751D409FBE00B79649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2FDA8761D409FBE00B79649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D2FDA8781D409FBE00B79649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D9B5E06B6BCD1044DB2D67 /* Pods-SimPermissions.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimPermissions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickentin.SimPermissions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimPermissions/SimPermissions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2FDA8791D409FBE00B79649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135382E1E656AD55BE0184EF /* Pods-SimPermissions.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimPermissions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickentin.SimPermissions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimPermissions/SimPermissions-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D2FDA87B1D409FBE00B79649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A8859CA5F0C9D222AD47F6 /* Pods-SimPermissionsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimPermissionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickentin.SimPermissionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimPermissions.app/Contents/MacOS/SimPermissions";
+			};
+			name = Debug;
+		};
+		D2FDA87C1D409FBE00B79649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8A673F29C82005AA19163E /* Pods-SimPermissionsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimPermissionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickentin.SimPermissionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimPermissions.app/Contents/MacOS/SimPermissions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2FDA85A1D409FBE00B79649 /* Build configuration list for PBXProject "SimPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FDA8751D409FBE00B79649 /* Debug */,
+				D2FDA8761D409FBE00B79649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2FDA8771D409FBE00B79649 /* Build configuration list for PBXNativeTarget "SimPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FDA8781D409FBE00B79649 /* Debug */,
+				D2FDA8791D409FBE00B79649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2FDA87A1D409FBE00B79649 /* Build configuration list for PBXNativeTarget "SimPermissionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FDA87B1D409FBE00B79649 /* Debug */,
+				D2FDA87C1D409FBE00B79649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2FDA8571D409FBE00B79649 /* Project object */;
+}
