@@ -20,6 +20,10 @@ SimPermissions can modify a range of permission settings, with more coming soon.
 
 ### How do I get set up?
 
+* Download the latest binary from the [releases](https://github.com/NickEntin/SimPermissions/releases/) page
+
+-- OR --
+
 * Clone the repo
 * Run `pod install`
 * Open `SimPermissions.xcworkspace`
