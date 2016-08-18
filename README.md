@@ -1,5 +1,6 @@
 # SimPermissions
 
+[![Build Status](https://travis-ci.org/NickEntin/SimPermissions.svg?branch=travis)](https://travis-ci.org/NickEntin/SimPermissions/)
 [![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/NickEntin/SimPermissions/releases)
 [![Issues](https://img.shields.io/github/issues/nickentin/simpermissions.svg?maxAge=2592000)](https://github.com/NickEntin/SimPermissions/issues)
 [![MIT License](https://img.shields.io/badge/license-MIT-lightgray.svg)](https://github.com/NickEntin/SimPermissions/blob/master/LICENSE)
