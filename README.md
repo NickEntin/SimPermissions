@@ -2,6 +2,7 @@
 
 [![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/NickEntin/SimPermissions/releases)
 [![Issues](https://img.shields.io/github/issues/nickentin/simpermissions.svg?maxAge=2592000)](https://github.com/NickEntin/SimPermissions/issues)
+[![MIT License](https://img.shields.io/badge/license-MIT-lightgray.svg)](https://github.com/NickEntin/SimPermissions/blob/master/LICENSE)
 
 SimPermissions is a macOS menu bar app that lets you manage individual app permissions on the iOS simulator. First, select a simulator. You will then see a list of permissions that have been set on that simulator. Each item has an option to grant/revoke that permission, or clear it completely.
 
