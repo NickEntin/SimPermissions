@@ -51,6 +51,10 @@ class SimulatorManager {
                     let deviceTypes: [String : AnyObject] = json["devices"] as? [String : AnyObject] {
                     for (deviceType, devices) in deviceTypes {
                         if deviceType.rangeOfString("iOS") != nil {
+                            let deviceType = deviceType.stringByReplacingOccurrencesOfString("com.apple.CoreSimulator.SimRuntime.", withString: "")
+                                                .stringByReplacingOccurrencesOfString("iOS-", withString: "iOS ")
+                                                .stringByReplacingOccurrencesOfString("-", withString: ".")
+                            
                             if let devices = devices as? [[String:String]] {
                                 simulators.appendContentsOf(simulatorsFromDescriptionList(devices, system: deviceType))
                             }
